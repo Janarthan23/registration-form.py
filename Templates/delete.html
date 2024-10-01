@@ -1,0 +1,13 @@
+{% extends 'home.html' %}
+{% block title %}
+<title>Deletepage</title>
+{% endblock %}
+{% block content %}
+<h3>Confirmation form:</h3>
+<form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete {{user}} Data?</p>
+    <input type="submit" value="YES" class="btn btn-success">
+    <a href="/read" class="btn btn-danger">NO</a>
+</form>
+{% endblock %}

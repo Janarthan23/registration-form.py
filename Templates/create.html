@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block title %}
+<title>Classy views:</title>
+{% endblock %}
+{% block content %}
+<h3>FORM:</h3>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="REGISTER" class="btn btn-success">
+</form>
+{% endblock %}

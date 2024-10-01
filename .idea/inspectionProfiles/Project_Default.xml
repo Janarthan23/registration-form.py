@@ -1,0 +1,85 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="static," />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E265" />
+          <option value="E302" />
+          <option value="E111" />
+          <option value="E117" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="practice1.practice1.urls.sample" />
+          <option value="practice1.practice1.urls.*" />
+          <option value="testproject.testproject.urls.testapp" />
+          <option value="testproject.testproject.urls.homepage" />
+          <option value="sampleproject.sampleproject.urls.app1" />
+          <option value="sampleproject.sampleproject.urls.homepage" />
+          <option value="sampleproject.sampleproject.urls.aboutpage" />
+          <option value="project1.project1.urls.app1" />
+          <option value="project1.sampleproject.app1.views.get_object_or_404" />
+          <option value="project1.sampleproject.app1.views.Enquiry1" />
+          <option value="project1.project1.urls.*" />
+          <option value="project1.sampleproject.app1.views.Student" />
+          <option value="sampleproject.sampleproject.urls.studentenq" />
+          <option value="sampleproject.sampleproject.urls.enquirypage" />
+          <option value="sampleproject.sampleproject.urls.coursepage" />
+          <option value="sampleproject.sampleproject.urls.*" />
+          <option value="project1.app1.views.app1" />
+          <option value="project1.app1.views.Student1" />
+          <option value="project1.app1.views.Enquiry1" />
+          <option value="project1.app1.views.EnquiryForm" />
+          <option value="app1.views.Webdesigning" />
+          <option value="django.db.models.Charfeild" />
+          <option value="django.db.models.charfeild" />
+          <option value="app1.forms.Enquiry" />
+          <option value="django.forms.Modelform" />
+          <option value="django.http.httpResponse" />
+          <option value="app1.views.HttpResponse" />
+          <option value="app1.views.request" />
+          <option value="app1.views.NONE" />
+          <option value="app1.views.myform" />
+          <option value="sampleproject.urls.enquirypage" />
+          <option value="sample.sample.urls.app1" />
+          <option value="sample.sample.urls.*" />
+          <option value="djangoproject.app1.views.StudentEnqform" />
+          <option value="djangoproject.djangoproject.urls.homepage" />
+          <option value="djangoproject.djangoproject.urls.*" />
+          <option value="application1.views.autenticacao" />
+          <option value="limbox.limbox.urls.*" />
+          <option value="project.project.urls.*" />
+          <option value="adding_image.app1.forms.photos" />
+          <option value="adding_image.adding_image.urls.*" />
+          <option value="caddproject.caddproject.urls.*" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

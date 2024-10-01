@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>homepage</title>
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        header{
+        background-color:yellow;
+        }
+        body{
+        background-color:#DFC5FE;
+        }
+    </style>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'external.css' %}">
+</head>
+<body>
+<header class="container-fluid row">
+    <h1 class="col-xl-8">Welcome to livewire</h1>
+    <div class="col-xl-4">
+    <a class="btn btn-primary m-4" href="/admin">Admin</a>
+        </div>
+</header>
+    <main class="row">
+        <nav class="col-xl-4">
+            <a href="/" class="btn btn-primary btn-block btn-outline-light">HOME</a>
+            <a href="/about" class="btn btn-primary btn-block btn-outline-light">ABOUT</a>
+            <a href="/course" class="btn btn-primary btn-block btn-outline-light">COURSE</a>
+            <a href="/create" class="btn btn-primary btn-block btn-outline-light">REGISTRATION</a>
+            <a href="/read" class="btn btn-primary btn-block btn-outline-light">T.REGISTRATIONS</a>
+            <a href="/reg" class="btn btn-primary btn-block btn-outline-light">FORM</a>
+            <a href="/display" class="btn btn-primary btn-block btn-outline-light">TOTAL DATAS</a>
+            <a href="/signup" class="btn btn-primary btn-block btn-outline-light">SIGNUP</a>
+            <a href="/login" class="btn btn-primary btn-block btn-outline-light">LOGIN</a>
+            <a href="/logout" class="btn btn-primary btn-block btn-outline-light">LOGOUT</a>
+        </nav>
+        <div class="col-xl-8">
+        {% block content %}
+            <h4>The current time is {{time}}</h4>
+            <h3>Filters:</h3>
+            <h4>The Name of Student is {{name|upper}}</h4>
+            <p>{{name|lower}}</p>
+            <p>{{name|title}} </p>
+            <p>The length of the given data is : {{name|length}}</p>
+
+            <img src="{% static 'flowershop2.jpg' %}">
+            {% endblock %}
+        </div>
+    </main>
+</body>
+</html>

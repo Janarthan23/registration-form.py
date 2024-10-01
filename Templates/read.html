@@ -1,0 +1,37 @@
+{% extends 'home.html' %}
+{% block title %}
+    <title>Read page</title>
+{% endblock %}
+{% block content %}
+<h3>Total Registrations:</h3>
+<table border="">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>EMAIL</th>
+        <th>COURSE</th>
+        <th>PHONE NUMBER</th>
+        <th>DATETIME</th>
+        <th>UPDATE</th>
+        <th>DELETE</th>
+    </tr>
+    {% for d in data %}
+    <tr>
+        <td>{{d.id}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.age}}</td>
+        <td>{{d.email}}</td>
+        <td>{{d.course}}</td>
+        <td>{{d.mobile}}</td>
+        <td>{{d.datetime}}</td>
+        <td>
+            <a href="/update/{{d.id}}">Update</a>
+        </td>
+        <td>
+            <a href="/delete/{{d.id}}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block title %}
+    <title>coursepage</title>
+{% endblock %}
+{% block content %}
+    <h3>courses on livewire:</h3>
+    <ol>
+        {% for a in course %}
+        <li>{{a}}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

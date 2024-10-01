@@ -1,0 +1,13 @@
+{% extends 'home.html' %}
+{% block title %}
+<title>Login Page</title>
+{% endblock %}
+{% block content %}
+<h3>LOGIN FORM:</h3>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="LOGIN" class="btn btn-success">
+    <a href="/password_reset">Forget Password?</a>
+</form>
+{% endblock %}

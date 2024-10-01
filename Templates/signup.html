@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block title %}
+<title>Signup page</title>
+{% endblock %}
+{% block content %}
+<h3>SIGNUP FORM:</h3>
+<form method="post">
+    {% csrf_token %}
+    {{myform.as_p}}
+    <input type="submit" value="SIGNUP" class="btn btn-success">
+</form>
+{% endblock %}

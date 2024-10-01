@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block title %}
+    <title>Title</title>
+{% endblock %}
+{% block content %}
+<h3>Updatation Form</h3>
+<form method="post">
+    {% csrf_token %}
+{{myform.as_p}}
+<input type="submit" value="UPDATE" class="btn btn-primary">
+</form>
+{% endblock %}

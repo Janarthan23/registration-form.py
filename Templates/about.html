@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+{% block title %}
+    <title>aboutpage</title>
+{% endblock %}
+{% block content %}
+    <h3>About page:</h3>
+    <p>LiveWire manufactures the LiveWire brand of motorcycles. Its first product is the LiveWire ONE electric motorcycle. Electric motorcycles are seen as easier and quieter to ride than gas-powered motorcycles, with no clutch or gearshift, or hot exhaust pipes.</p>
+    <p>The data is {{data}}</p>
+    {% if data|divisibleby:2 %}
+    <p style="color:green;">Even number</p>
+    {% else %}
+    <p style="color:blue;">Odd Number</p>
+    {% endif %}
+{% endblock %}
